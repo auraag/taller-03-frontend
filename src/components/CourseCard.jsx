@@ -1,3 +1,5 @@
+import './CourseCard.css'
+
 function CourseCard({ icon, title, description, level, accent }) {
   return (
     <article className="course-card" style={{ '--card-accent': accent }}>

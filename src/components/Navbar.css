@@ -1,0 +1,67 @@
+.site-header {
+  align-items: center;
+  background: var(--navy);
+  color: #fff;
+  display: flex;
+  height: 68px;
+  justify-content: space-between;
+  padding: 0 clamp(24px, 7vw, 92px);
+}
+
+.brand {
+  color: var(--coral);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.brand span {
+  color: #fff;
+}
+
+.main-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.main-nav a {
+  color: #c9cada;
+  font-size: 12px;
+  transition: color 180ms ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  color: #fff;
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    height: 62px;
+    padding: 0 20px;
+  }
+
+  .main-nav {
+    gap: 15px;
+  }
+
+  .main-nav a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  .brand {
+    font-size: 15px;
+  }
+
+  .main-nav {
+    gap: 11px;
+  }
+}
+
+.main-nav a.active {
+  color: #fff;
+  font-weight: 600;
+}

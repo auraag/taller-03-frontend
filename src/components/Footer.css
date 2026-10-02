@@ -1,0 +1,18 @@
+.site-footer {
+  align-items: center;
+  background: #10111b;
+  color: #686c7b;
+  display: flex;
+  font-size: 10px;
+  justify-content: center;
+  min-height: 71px;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer span {
+  color: var(--coral);
+}

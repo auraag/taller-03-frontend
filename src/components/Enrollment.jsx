@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './Enrollment.css'
 
 function Enrollment() {
   const [students, setStudents] = useState(0)
@@ -7,17 +8,36 @@ function Enrollment() {
   const increase = () => setStudents((current) => current + 1)
 
   return (
-    <section className="enrollment-section" id="nosotros">
+    <section className="enrollment-section">
       <div className="section-heading section-heading-dark">
         <h2>¿Cuántos estudiantes van a inscribirse?</h2>
         <p>Usa los botones para ajustar el número</p>
       </div>
+
       <div className="counter-wrap">
-        <div className="counter" aria-label={`${students} estudiantes inscritos`}>
-          <button type="button" onClick={decrease} aria-label="Disminuir estudiantes">−</button>
+        <div
+          className="counter"
+          aria-label={`${students} estudiantes inscritos`}
+        >
+          <button
+            type="button"
+            onClick={decrease}
+            aria-label="Disminuir estudiantes"
+          >
+            −
+          </button>
+
           <strong>{students}</strong>
-          <button type="button" onClick={increase} aria-label="Aumentar estudiantes">+</button>
+
+          <button
+            type="button"
+            onClick={increase}
+            aria-label="Aumentar estudiantes"
+          >
+            +
+          </button>
         </div>
+
         <span className="counter-label">estudiantes inscritos</span>
       </div>
     </section>

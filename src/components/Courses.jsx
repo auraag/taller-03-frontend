@@ -1,4 +1,5 @@
 import CourseCard from './CourseCard'
+import './Courses.css'
 
 const courses = [
   { icon: '✣', title: 'React Básico', description: 'Componentes, props, estado y eventos. Todo lo que necesitas para empezar.', level: 'Principiante', accent: '#7257d9' },
@@ -9,11 +10,12 @@ const courses = [
 
 function Courses() {
   return (
-    <section className="courses-section" id="cursos">
+    <section className="courses-section">
       <div className="section-heading">
         <h2>Nuestros Cursos</h2>
         <p>Elige el camino que mejor se adapte a ti</p>
       </div>
+
       <div className="courses-grid">
         {courses.map((course) => (
           <CourseCard key={course.title} {...course} />
